@@ -98,7 +98,7 @@ digest_client_generate_header(digest_t *digest, char *result, size_t max_length)
 	}
 
 	/* Generate the minimum digest header string */
-	result_size = snprintf(result, max_length, "Digest username=\"%s\", realm=\"%s\", uri=\"%s\", response=\"%s\"",\
+	result_size = snprintf(result, max_length, "username=\"%s\", realm=\"%s\", uri=\"%s\", response=\"%s\"",\
 	    dig->username,\
 	    dig->realm,\
 	    dig->uri,\
